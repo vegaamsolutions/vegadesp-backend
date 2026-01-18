@@ -29,7 +29,7 @@ git pull origin develop
 git checkout -b feature/nome-da-feature
 ```
 
-2. Realizar o desenvolvimento e fazer o commit normalmente.
+2. Realizar o desenvolvimento e fazer o commit normalmente com base no nome da feature `git push origin nome-da-feature`.
 
 3. Finalizar a feature
 
@@ -49,3 +49,9 @@ git merge develop
 git push origin main
 ```
 
+6. Apagar a feature criada 
+
+```bash
+git branch -d feature/nome-da-feature 
+git push origin --delete feature/nome-da-feature
+```
